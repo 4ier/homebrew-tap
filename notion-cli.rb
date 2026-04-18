@@ -10,7 +10,7 @@ class NotionCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/4ier/notion-cli/releases/download/v0.4.0/notion-cli_0.4.0_darwin_amd64.tar.gz"
-      sha256 "84f616fb8d6276a41b3dbf5bf721b31f981dd06eda065bbbbed921fa8ca3bec5"
+      sha256 "3626c497ee5462fbba11f44f3a597e091b41ab75948fb5ef5557b610094c8e04"
 
       define_method(:install) do
         bin.install "notion"
@@ -18,7 +18,7 @@ class NotionCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/4ier/notion-cli/releases/download/v0.4.0/notion-cli_0.4.0_darwin_arm64.tar.gz"
-      sha256 "687add4c41048dde59a29ee0ae2598853d7413050cb4a9000c7d93d9947d95e1"
+      sha256 "8f5b63c927a7e7ff977f74576ace3caa13061d4150b2a05497d521671fba4e3c"
 
       define_method(:install) do
         bin.install "notion"
@@ -29,14 +29,14 @@ class NotionCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/4ier/notion-cli/releases/download/v0.4.0/notion-cli_0.4.0_linux_amd64.tar.gz"
-      sha256 "2a447fd6b75df06e2df4ad50efbd4e943e3273cfcfe93582416266f9cb886e84"
+      sha256 "f7d87781dffae59bf712591ef71dee82fe57ae6c891172c004bcd315f752195e"
       define_method(:install) do
         bin.install "notion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/4ier/notion-cli/releases/download/v0.4.0/notion-cli_0.4.0_linux_arm64.tar.gz"
-      sha256 "c14dc968b1f07b8c1702fd8685b6274d73f2afd35add9f309908b0db0fb7f429"
+      sha256 "349730c8e6f35f494976de014854e0bcffc58051baddeda4c742ebc626ca4ea8"
       define_method(:install) do
         bin.install "notion"
       end
